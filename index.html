@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SlideX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">SlideX</a>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#slider">Slider</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SLIDER SECTION -->
+  <section class="slider-section" id="slider">
+    <h2>Image Slider</h2>
+
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/29/900/400" alt="Mountains" />
+          <div class="slide-caption">
+            <h3>Majestic Mountains</h3>
+            <p>Breathtaking peaks above the clouds</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/119/900/400" alt="Beach" />
+          <div class="slide-caption">
+            <h3>Serene Beach</h3>
+            <p>Golden sands and calm waves</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/10/900/400" alt="Forest" />
+          <div class="slide-caption">
+            <h3>Deep Forest</h3>
+            <p>Sunlight filtering through the trees</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/1048/900/400" alt="City" />
+          <div class="slide-caption">
+            <h3>City Skyline</h3>
+            <p>Lights that never sleep</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/202/900/400" alt="Lake" />
+          <div class="slide-caption">
+            <h3>Peaceful Lake</h3>
+            <p>Mirror-like reflections at dawn</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="arrow arrow-left" id="prevBtn">&#8592;</button>
+      <button class="arrow arrow-right" id="nextBtn">&#8594;</button>
+    </div>
+
+    <div class="dots" id="dotsContainer"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
